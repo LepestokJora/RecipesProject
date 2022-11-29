@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED06297D29368F41004549F2 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06297C29368F41004549F2 /* ReadMe.swift */; };
 		EDFA7D2729367444005650EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA7D2629367444005650EC /* AppDelegate.swift */; };
 		EDFA7D2929367444005650EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA7D2829367444005650EC /* SceneDelegate.swift */; };
 		EDFA7D2B29367444005650EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA7D2A29367444005650EC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED06297C29368F41004549F2 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		EDFA7D2329367444005650EC /* RecipesProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFA7D2629367444005650EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFA7D2829367444005650EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFA7D2629367444005650EC /* AppDelegate.swift */,
+				ED06297C29368F41004549F2 /* ReadMe.swift */,
 				EDFA7D2829367444005650EC /* SceneDelegate.swift */,
 				EDFA7D2A29367444005650EC /* ViewController.swift */,
 				EDFA7D2C29367444005650EC /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFA7D2B29367444005650EC /* ViewController.swift in Sources */,
+				ED06297D29368F41004549F2 /* ReadMe.swift in Sources */,
 				EDFA7D2729367444005650EC /* AppDelegate.swift in Sources */,
 				EDFA7D2929367444005650EC /* SceneDelegate.swift in Sources */,
 			);

@@ -7,37 +7,21 @@
 
 import UIKit
 
-struct MyTestRecipes{
-    
-    let image: UIImage
-    let title: String
-    let description: String
-    
-}
 
 class RecipesTableViewController: UITableViewController {
     
     
     
-    let myTest: [MyTestRecipes] = [MyTestRecipes(image:UIImage(named: "sm_236710")!,
-                                                 title:"Паста Карбонара",
-                                                 description: "спагетти, грудинка, яйцо куриное, желток, сыр пармезан, масло сливочное, масло оливковое, чеснок, соль, перец чёрный"),
-                                   MyTestRecipes(image:UIImage(named: "sm_174367")!,
-                                                 title: "Пицца",
-                                                 description: "яйца, майонез, мука, соль, колбаса, сыр, помидоры, огурцы солёные, лук репчатый, чеснок, кетчуп"),
-                                   
-                                   MyTestRecipes(image:UIImage(named: "sm_265013")!,
-                                                 title: "Корн-доги",
-                                                 description: "сосиски, яйца, мука пшеничная, мука кукурузная, разрыхлитель, молоко, соль, сахар, масло растительное")
-                                   
-                                   
-                                   
-                                   
-                                   
-    ]
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+ 
+        
+        
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,7 +38,7 @@ class RecipesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return myTest.count
+        return DataManager.shared.recipeArry.count
         
     }
     
@@ -62,9 +46,9 @@ class RecipesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? RecipesTableViewCell{
             
-            cell.titleLabel.text = myTest[indexPath.row].title
-            cell.descriptionLabel.text = myTest[indexPath.row].description
-            cell.imageIV.image = myTest[indexPath.row].image
+            cell.titleLabel.text = DataManager.shared.recipeArry[indexPath.row].title
+            cell.descriptionLabel.text = DataManager.shared.recipeArry[indexPath.row].description
+            cell.imageIV.image = DataManager.shared.recipeArry[indexPath.row].image
             
             return cell
         }
@@ -80,9 +64,37 @@ class RecipesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // if let detailViewController = segue.destination as? ........... {
         // detailViewController.person = selectPerson
-        print ("\(segue.identifier)")
+        print ("\(String(describing: segue.identifier))")
         
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    
+        return 130
+    }
+
+    
+    
+    
+    
+    
+    
+   /*
+    (CGFloat);tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        CGFloat height = 0.0;
+        if (isRowHidden) {
+            height = 0.0;
+        } else {
+            height = 44.0;
+        }
+        return height;
+    }
+    
+    */
+    
+    
+    
 }
     
     

@@ -46,14 +46,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuP-kG-oMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="7NB-N8-I0o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="354" y="846"/>
+            <point key="canvasLocation" x="1040" y="-58"/>
         </scene>
-        <!--View Controller-->
+        <!--Recip Details View Controller-->
         <scene sceneID="uid-9j-FxY">
             <objects>
-                <viewController id="rNl-f5-PG0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipDetailsViewController" id="rNl-f5-PG0" customClass="RecipDetailsViewController" customModule="RecipesProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VpH-Zz-hwq">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LhT-fG-yLs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7I-4o-efT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2502" y="739"/>
+            <point key="canvasLocation" x="380" y="677"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rcZ-8w-nOn">
@@ -74,21 +74,22 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mf2-0e-vYH" kind="relationship" relationship="viewControllers" id="5gC-do-Qrj"/>
+                        <segue destination="UrV-wU-ElA" kind="relationship" relationship="viewControllers" id="YII-Ry-Yfp"/>
                         <segue destination="iH4-tV-iOT" kind="relationship" relationship="viewControllers" id="0oo-Wd-YoT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GR5-hf-ftl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="24"/>
+            <point key="canvasLocation" x="-91" y="-786"/>
         </scene>
-        <!--Рецепты-->
+        <!--MY RECIPES-->
         <scene sceneID="4Ga-us-Rwh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="UrV-wU-ElA" sceneMemberID="viewController">
+                <navigationController title="MY RECIPES" automaticallyAdjustsScrollViewInsets="NO" id="UrV-wU-ElA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Рецепты" image="book.fill" catalog="system" id="xGL-lY-F8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s87-DP-0Wa">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -98,9 +99,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwE-sZ-vrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="-154"/>
+            <point key="canvasLocation" x="-369" y="-58"/>
         </scene>
-        <!--Item-->
+        <!--МОИ РЕЦЕПТЫ-->
         <scene sceneID="rgB-tl-geK">
             <objects>
                 <tableViewController id="mf2-0e-vYH" customClass="RecipesTableViewController" customModule="RecipesProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -177,14 +178,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="8e4-iS-4RS"/>
-                    <navigationItem key="navigationItem" id="o8n-gD-wuU"/>
+                    <navigationItem key="navigationItem" title="МОИ РЕЦЕПТЫ" id="o8n-gD-wuU">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="D1C-qL-50s"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="rNl-f5-PG0" kind="presentation" identifier="siteSegue" id="3Y3-7w-OWd"/>
+                        <segue destination="rNl-f5-PG0" kind="presentation" identifier="siteSegue" modalPresentationStyle="fullScreen" id="3Y3-7w-OWd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IA1-ya-6l8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="739"/>
+            <point key="canvasLocation" x="-369" y="677"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="L1u-na-tdY">
@@ -263,12 +266,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Z-W1-5G3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1048" y="23"/>
+            <point key="canvasLocation" x="-1086" y="-786"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="5gC-do-Qrj"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="10" width="128" height="128"/>
         <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="128" height="86"/>

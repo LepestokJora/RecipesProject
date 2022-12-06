@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */; };
+		80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */; };
 		ED78825D293D226000D483CC /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78825B293D226000D483CC /* RecipesTableViewCell.swift */; };
 		ED78825E293D226000D483CC /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78825C293D226000D483CC /* RecipesTableViewController.swift */; };
 		ED788262293D3A3B00D483CC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED788261293D3A3B00D483CC /* DataManager.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipDetailsViewController.swift; sourceTree = "<group>"; };
 		ED78825B293D226000D483CC /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
 		ED78825C293D226000D483CC /* RecipesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		ED788261293D3A3B00D483CC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				ED78825B293D226000D483CC /* RecipesTableViewCell.swift */,
 				ED78825C293D226000D483CC /* RecipesTableViewController.swift */,
 				80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */,
+				80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */,
 				EDFA7D2F29367445005650EC /* Assets.xcassets */,
 				EDFA7D3129367445005650EC /* LaunchScreen.storyboard */,
 				EDFA7D3429367445005650EC /* Info.plist */,
@@ -149,6 +152,7 @@
 			files = (
 				80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */,
 				ED788262293D3A3B00D483CC /* DataManager.swift in Sources */,
+				80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */,
 				EDFA7D2729367444005650EC /* AppDelegate.swift in Sources */,
 				EDFA7D2929367444005650EC /* SceneDelegate.swift in Sources */,
 				ED78825D293D226000D483CC /* RecipesTableViewCell.swift in Sources */,

@@ -12,10 +12,20 @@ class LoginViewController: UIViewController {
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    @IBOutlet weak var startBatton: UIButton!
+    @IBOutlet weak var forgotUserButton: UIButton!
+    @IBOutlet weak var forgotPassButton: UIButton!
+    
     private let user = "User"
     private let password =  "1234"
     
- 
+    override func viewDidLoad() {
+        startBatton.layer.cornerRadius = 20
+        forgotUserButton.layer.cornerRadius = 20
+        forgotPassButton.layer.cornerRadius = 20
+    }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -41,8 +51,8 @@ class LoginViewController: UIViewController {
         
     @IBAction func forgotButtonAction(_ sender: UIButton) {
             sender.tag == 1
-            ? showAlert(title: "Oops!", message: "Your name is \(user) 😉")
-            : showAlert(title: "Oops!", message: "Your password is \(password) 😉")
+            ? showAlert(title: "Упс!", message: "Ваше имя \(user) 😉")
+            : showAlert(title: "Упс!", message: "Ваш пароль\(password) 😉")
             
         }
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {

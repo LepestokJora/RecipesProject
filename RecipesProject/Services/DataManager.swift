@@ -15,12 +15,9 @@ struct MyRecipes{
     
 }
 
-
 class DataManager {
     
     static let shared = DataManager()
-
-   
 
     let recipeArry: [MyRecipes] = [MyRecipes(image:UIImage(named: "1")!,
                                                  title:"РОЖДЕСТВЕНСКИЙ ШТОЛЛЕН",

@@ -10,18 +10,10 @@ import UIKit
 
 class RecipesTableViewController: UITableViewController {
     
-    
-    
-  
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
- 
-        
-        
-        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,22 +25,19 @@ class RecipesTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1   }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return DataManager.shared.recipeArry.count
-        
+        return 1
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return user.myRecipes.count
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? RecipesTableViewCell{
             
-            cell.titleLabel.text = DataManager.shared.recipeArry[indexPath.row].title
-            cell.descriptionLabel.text = DataManager.shared.recipeArry[indexPath.row].description
-            cell.imageIV.image = DataManager.shared.recipeArry[indexPath.row].image
+            cell.titleLabel.text = user.myRecipes[indexPath.row].title
+            cell.descriptionLabel.text = user.myRecipes[indexPath.row].description
+            cell.imageIV.image = user.myRecipes[indexPath.row].image
             
             return cell
         }
@@ -62,16 +51,19 @@ class RecipesTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // if let detailViewController = segue.destination as? ........... {
-        // detailViewController.person = selectPerson
-        print ("\(String(describing: segue.identifier))")
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? RecipDetailsViewController else {return}
+            detailVC.recip = user.myRecipes[indexPath.row]
+            print ("\(String(describing: segue.identifier))")
+            
+        }
+    }
         
-    }
+        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+            return 130
+        }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    
-        return 130
-    }
 
     
     

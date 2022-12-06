@@ -11,7 +11,7 @@
         <!--Авторы-->
         <scene sceneID="I6f-Ro-VUj">
             <objects>
-                <viewController id="iH4-tV-iOT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="iH4-tV-iOT" customClass="ListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jeQ-kJ-Rd8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                     <tabBarItem key="tabBarItem" title="Авторы" image="australsign.square.fill" catalog="system" landscapeImage="10" id="4DS-KP-qME"/>
                     <toolbarItems>
                         <barButtonItem title="LOG OUT" image="arrowshape.turn.up.left.2.fill" catalog="system" style="plain" id="ZxN-z9-wSH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ftq-a1-t5M">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ftq-a1-t5M">
                                 <rect key="frame" x="16" y="10" width="358" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>

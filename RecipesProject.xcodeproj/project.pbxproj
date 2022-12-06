@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804AE25B293FBA3500152283 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE25A293FBA3500152283 /* Recipes.swift */; };
+		804AE25E293FCC9200152283 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE25D293FCC9200152283 /* ListViewController.swift */; };
 		80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */; };
 		80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */; };
 		ED78825D293D226000D483CC /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED78825B293D226000D483CC /* RecipesTableViewCell.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		804AE25A293FBA3500152283 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		804AE25D293FCC9200152283 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipDetailsViewController.swift; sourceTree = "<group>"; };
 		ED78825B293D226000D483CC /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,10 +49,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDFA7D1A29367444005650EC = {
+		804AE254293FB8DA00152283 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA7D2C29367444005650EC /* Main.storyboard */,
+				EDFA7D3129367445005650EC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		804AE255293FB90800152283 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA7D2629367444005650EC /* AppDelegate.swift */,
+				EDFA7D2829367444005650EC /* SceneDelegate.swift */,
+				EDFA7D3429367445005650EC /* Info.plist */,
+				804AE25C293FBA3A00152283 /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		804AE256293FB93300152283 /* ViewCotrollers */ = {
+			isa = PBXGroup;
+			children = (
+				80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */,
+				ED78825C293D226000D483CC /* RecipesTableViewController.swift */,
+				804AE25D293FCC9200152283 /* ListViewController.swift */,
+				80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */,
+			);
+			path = ViewCotrollers;
+			sourceTree = "<group>";
+		};
+		804AE258293FB95500152283 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA7D2F29367445005650EC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		804AE259293FB9E500152283 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				ED788261293D3A3B00D483CC /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		804AE25C293FBA3A00152283 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				804AE25A293FBA3500152283 /* Recipes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDFA7D1A29367444005650EC = {
+			isa = PBXGroup;
+			children = (
 				EDFA7D2529367444005650EC /* RecipesProject */,
 				EDFA7D2429367444005650EC /* Products */,
 			);
@@ -65,16 +123,12 @@
 		EDFA7D2529367444005650EC /* RecipesProject */ = {
 			isa = PBXGroup;
 			children = (
-				EDFA7D2629367444005650EC /* AppDelegate.swift */,
-				EDFA7D2829367444005650EC /* SceneDelegate.swift */,
-				EDFA7D2C29367444005650EC /* Main.storyboard */,
+				804AE259293FB9E500152283 /* Services */,
+				804AE255293FB90800152283 /* App */,
+				804AE254293FB8DA00152283 /* Storyboards */,
 				ED78825B293D226000D483CC /* RecipesTableViewCell.swift */,
-				ED78825C293D226000D483CC /* RecipesTableViewController.swift */,
-				80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */,
-				80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */,
-				EDFA7D2F29367445005650EC /* Assets.xcassets */,
-				EDFA7D3129367445005650EC /* LaunchScreen.storyboard */,
-				EDFA7D3429367445005650EC /* Info.plist */,
+				804AE256293FB93300152283 /* ViewCotrollers */,
+				804AE258293FB95500152283 /* Resources */,
 			);
 			path = RecipesProject;
 			sourceTree = "<group>";
@@ -153,7 +207,9 @@
 				80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */,
 				ED788262293D3A3B00D483CC /* DataManager.swift in Sources */,
 				80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */,
+				804AE25B293FBA3500152283 /* Recipes.swift in Sources */,
 				EDFA7D2729367444005650EC /* AppDelegate.swift in Sources */,
+				804AE25E293FCC9200152283 /* ListViewController.swift in Sources */,
 				EDFA7D2929367444005650EC /* SceneDelegate.swift in Sources */,
 				ED78825D293D226000D483CC /* RecipesTableViewCell.swift in Sources */,
 				ED78825E293D226000D483CC /* RecipesTableViewController.swift in Sources */,
@@ -305,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQF2HL47X2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecipesProject/Info.plist;
+				INFOPLIST_FILE = RecipesProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQF2HL47X2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecipesProject/Info.plist;
+				INFOPLIST_FILE = RecipesProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

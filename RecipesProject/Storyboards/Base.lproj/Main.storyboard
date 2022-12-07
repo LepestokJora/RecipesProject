@@ -15,38 +15,19 @@
                     <view key="view" contentMode="scaleToFill" id="jeQ-kJ-Rd8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-V4-fXk">
-                                <rect key="frame" x="11" y="58" width="85" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
-                                <connections>
-                                    <segue destination="7NB-N8-I0o" kind="unwind" unwindAction="unwindSegueWithSegue:" id="Yjz-DG-Z9o"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FoP-xT-OKU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Авторы" image="australsign.square.fill" catalog="system" landscapeImage="10" id="4DS-KP-qME"/>
-                    <toolbarItems>
-                        <barButtonItem title="LOG OUT" image="arrowshape.turn.up.left.2.fill" catalog="system" style="plain" id="ZxN-z9-wSH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ftq-a1-t5M">
-                                <rect key="frame" x="16" y="10" width="358" height="34.333333333333336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="hBM-2M-Vc2"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hBM-2M-Vc2">
+                        <barButtonItem key="backBarButtonItem" title="Выйти" id="sk6-Xl-ydo"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuP-kG-oMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="7NB-N8-I0o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="-58"/>
+            <point key="canvasLocation" x="417" y="-58"/>
         </scene>
         <!--Recip Details View Controller-->
         <scene sceneID="uid-9j-FxY">
@@ -58,27 +39,36 @@
                         <viewLayoutGuide key="safeArea" id="LhT-fG-yLs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dqB-mO-hzk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7I-4o-efT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="677"/>
+            <point key="canvasLocation" x="-472" y="689"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--МОИ РЕЦЕПТЫ-->
         <scene sceneID="rcZ-8w-nOn">
             <objects>
                 <tabBarController id="IAP-19-KFZ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="tSN-TK-DxQ"/>
+                    <navigationItem key="navigationItem" title="МОИ РЕЦЕПТЫ" id="tSN-TK-DxQ">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="kXN-MD-Ttr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Выйти" id="OYv-HC-59C">
+                            <connections>
+                                <segue destination="wZp-Gh-Zr2" kind="unwind" unwindAction="unwindSegueWithSegue:" id="feU-dK-w9R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fdV-HE-6Z4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UrV-wU-ElA" kind="relationship" relationship="viewControllers" id="YII-Ry-Yfp"/>
+                        <segue destination="mf2-0e-vYH" kind="relationship" relationship="viewControllers" id="FSe-rI-EGs"/>
                         <segue destination="iH4-tV-iOT" kind="relationship" relationship="viewControllers" id="0oo-Wd-YoT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GR5-hf-ftl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wZp-Gh-Zr2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-91" y="-786"/>
         </scene>
@@ -94,12 +84,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mf2-0e-vYH" kind="relationship" relationship="rootViewController" id="1yg-QD-OpS"/>
+                        <segue destination="IAP-19-KFZ" kind="relationship" relationship="rootViewController" id="t2v-Zr-F4W"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwE-sZ-vrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="-58"/>
+            <point key="canvasLocation" x="-960" y="-786"/>
         </scene>
         <!--МОИ РЕЦЕПТЫ-->
         <scene sceneID="rgB-tl-geK">
@@ -177,17 +167,17 @@
                             <outlet property="delegate" destination="mf2-0e-vYH" id="3fq-ie-nOo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="8e4-iS-4RS"/>
+                    <tabBarItem key="tabBarItem" title="Рецепты" id="8e4-iS-4RS"/>
                     <navigationItem key="navigationItem" title="МОИ РЕЦЕПТЫ" id="o8n-gD-wuU">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="D1C-qL-50s"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="rNl-f5-PG0" kind="presentation" identifier="siteSegue" modalPresentationStyle="fullScreen" id="3Y3-7w-OWd"/>
+                        <segue destination="rNl-f5-PG0" kind="show" identifier="siteSegue" id="3Y3-7w-OWd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IA1-ya-6l8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="677"/>
+            <point key="canvasLocation" x="-472" y="-66"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="L1u-na-tdY">
@@ -223,6 +213,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="loginButtonAction" destination="pAF-Vf-GfZ" eventType="touchUpInside" id="4UO-p8-3mh"/>
+                                            <segue destination="UrV-wU-ElA" kind="presentation" identifier="showRecipes" modalPresentationStyle="fullScreen" id="G5U-K7-XDU"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LMt-4H-bp5">
@@ -261,17 +252,15 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Ik0-w5-rpJ" id="54J-Fd-JlZ"/>
                         <outlet property="userTextField" destination="sat-0s-rlY" id="4Bw-T3-yhw"/>
-                        <segue destination="IAP-19-KFZ" kind="presentation" identifier="showRecipes" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lQG-bJ-3js"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Z-W1-5G3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1086" y="-786"/>
+            <point key="canvasLocation" x="-1792" y="-786"/>
         </scene>
     </scenes>
     <resources>
         <image name="10" width="128" height="128"/>
-        <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="128" height="86"/>
         <image name="australsign.square.fill" catalog="system" width="128" height="114"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <systemColor name="systemBackgroundColor">

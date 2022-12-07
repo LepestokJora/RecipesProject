@@ -21,11 +21,18 @@ class LoginViewController: UIViewController {
     }
 
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController else {return}
-        guard let viewControllers = tabBarController.viewControllers  else { return }
+        guard let navigationVC = segue.destination as? UINavigationController else {return}
+       
+       guard let tabBarController = navigationVC.topViewController as? UITabBarController else {return}
+     //   guard let tabBarController = segue.destination as? UITabBarController else {return}
+       
+      guard let viewControllers = tabBarController.viewControllers  else { return }
        viewControllers.forEach {
-           if let navigationVC = $0 as? UINavigationController{
-               guard let recipesTableVC = navigationVC.topViewController as? RecipesTableViewController else {return}
+//        if let navigationVC = $0 as? UINavigationController {
+//               guard let recipesTableVC = navigationVC.topViewController as? RecipesTableViewController else {return}
+//               recipesTableVC.user = user
+        //   }
+           if let recipesTableVC = $0  as? RecipesTableViewController {
                recipesTableVC.user = user
            }
            else if let listVC = $0 as? ListViewController{

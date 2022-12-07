@@ -64,7 +64,6 @@
 				EDFA7D2629367444005650EC /* AppDelegate.swift */,
 				EDFA7D2829367444005650EC /* SceneDelegate.swift */,
 				EDFA7D3429367445005650EC /* Info.plist */,
-				804AE25C293FBA3A00152283 /* Models */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -73,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */,
+				ED78825B293D226000D483CC /* RecipesTableViewCell.swift */,
 				ED78825C293D226000D483CC /* RecipesTableViewController.swift */,
 				804AE25D293FCC9200152283 /* ListViewController.swift */,
 				80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */,
@@ -124,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				804AE259293FB9E500152283 /* Services */,
+				804AE25C293FBA3A00152283 /* Models */,
 				804AE255293FB90800152283 /* App */,
 				804AE254293FB8DA00152283 /* Storyboards */,
-				ED78825B293D226000D483CC /* RecipesTableViewCell.swift */,
 				804AE256293FB93300152283 /* ViewCotrollers */,
 				804AE258293FB95500152283 /* Resources */,
 			);

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		804AE25B293FBA3500152283 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE25A293FBA3500152283 /* Recipes.swift */; };
+		804AE25B293FBA3500152283 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE25A293FBA3500152283 /* User.swift */; };
 		804AE25E293FCC9200152283 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804AE25D293FCC9200152283 /* ListViewController.swift */; };
 		80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */; };
 		80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		804AE25A293FBA3500152283 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		804AE25A293FBA3500152283 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		804AE25D293FCC9200152283 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		80B2048C293BBB2C0058F0E6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		80C79C78293FB43B0032BAF6 /* RecipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipDetailsViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		804AE25C293FBA3A00152283 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				804AE25A293FBA3500152283 /* Recipes.swift */,
+				804AE25A293FBA3500152283 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				80B2048D293BBB2C0058F0E6 /* LoginViewController.swift in Sources */,
 				ED788262293D3A3B00D483CC /* DataManager.swift in Sources */,
 				80C79C79293FB43B0032BAF6 /* RecipDetailsViewController.swift in Sources */,
-				804AE25B293FBA3500152283 /* Recipes.swift in Sources */,
+				804AE25B293FBA3500152283 /* User.swift in Sources */,
 				EDFA7D2729367444005650EC /* AppDelegate.swift in Sources */,
 				804AE25E293FCC9200152283 /* ListViewController.swift in Sources */,
 				EDFA7D2929367444005650EC /* SceneDelegate.swift in Sources */,

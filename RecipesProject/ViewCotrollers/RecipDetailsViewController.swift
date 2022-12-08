@@ -17,7 +17,7 @@ class RecipDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        recipeCoverImageView.image = recip.image
+        recipeCoverImageView.image = UIImage(named: recip.image)
         recipeTitleLabel.text = recip.title
         recipeDescriptionLabel.text = recip.description
         view.backgroundColor = .systemBrown

@@ -17,5 +17,12 @@ struct User {
     }
     
 }
+struct Recipe{
+    
+    let image: String
+    let title: String
+    let description: String
+    
+}
 
 

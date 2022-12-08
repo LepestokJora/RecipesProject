@@ -15,8 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="jeQ-kJ-Rd8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="T2t-vZ-iKf">
+                                <rect key="frame" x="20" y="131" width="350" height="210.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторы:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGC-NA-adv">
+                                        <rect key="frame" x="132.66666666666666" y="0.0" width="84.666666666666657" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Артем" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-hS-Q5X">
+                                        <rect key="frame" x="150" y="51.333333333333343" width="50.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ирина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyg-RC-8y0">
+                                        <rect key="frame" x="149.33333333333334" y="97.666666666666657" width="51.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Илья" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9u-00-4cL">
+                                        <rect key="frame" x="155.66666666666666" y="144" width="39" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Валентин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axc-u0-dgZ">
+                                        <rect key="frame" x="137" y="190.33333333333331" width="76.333333333333314" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FoP-xT-OKU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="FoP-xT-OKU" firstAttribute="trailing" secondItem="T2t-vZ-iKf" secondAttribute="trailing" constant="20" id="izG-12-bIq"/>
+                            <constraint firstItem="T2t-vZ-iKf" firstAttribute="top" secondItem="FoP-xT-OKU" secondAttribute="top" constant="40" id="taW-k3-jhW"/>
+                            <constraint firstItem="T2t-vZ-iKf" firstAttribute="leading" secondItem="FoP-xT-OKU" secondAttribute="leading" constant="20" id="vqU-6Y-AVs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Авторы" image="australsign.square.fill" catalog="system" landscapeImage="10" id="4DS-KP-qME"/>
                     <toolbarItems/>
@@ -36,10 +78,45 @@
                     <view key="view" contentMode="scaleToFill" id="VpH-Zz-hwq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tbT-Zg-Ht2">
+                                <rect key="frame" x="20" y="111" width="350" height="285.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3o-WE-AFR">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Un-t8-ATK">
+                                        <rect key="frame" x="0.0" y="45.333333333333343" width="350" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="x7m-QW-IfX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOs-1Y-Yb2">
+                                        <rect key="frame" x="0.0" y="265.33333333333331" width="350" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LhT-fG-yLs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tbT-Zg-Ht2" firstAttribute="leading" secondItem="LhT-fG-yLs" secondAttribute="leading" constant="20" id="QlO-WR-a22"/>
+                            <constraint firstItem="tbT-Zg-Ht2" firstAttribute="top" secondItem="LhT-fG-yLs" secondAttribute="top" constant="20" id="qvt-Ua-RPS"/>
+                            <constraint firstItem="LhT-fG-yLs" firstAttribute="trailing" secondItem="tbT-Zg-Ht2" secondAttribute="trailing" constant="20" id="r5V-RO-lOb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dqB-mO-hzk"/>
+                    <connections>
+                        <outlet property="recipeCoverImageView" destination="4Un-t8-ATK" id="dIH-96-ofd"/>
+                        <outlet property="recipeDescriptionLabel" destination="pOs-1Y-Yb2" id="N25-yB-BFl"/>
+                        <outlet property="recipeTitleLabel" destination="c3o-WE-AFR" id="itW-WS-oO6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7I-4o-efT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="-960" y="-786"/>
         </scene>
-        <!--МОИ РЕЦЕПТЫ-->
+        <!--Рецепты-->
         <scene sceneID="rgB-tl-geK">
             <objects>
                 <tableViewController id="mf2-0e-vYH" customClass="RecipesTableViewController" customModule="RecipesProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,8 +244,8 @@
                             <outlet property="delegate" destination="mf2-0e-vYH" id="3fq-ie-nOo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Рецепты" id="8e4-iS-4RS"/>
-                    <navigationItem key="navigationItem" title="МОИ РЕЦЕПТЫ" id="o8n-gD-wuU">
+                    <tabBarItem key="tabBarItem" title="Рецепты" image="book.fill" catalog="system" id="8e4-iS-4RS"/>
+                    <navigationItem key="navigationItem" id="o8n-gD-wuU">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="D1C-qL-50s"/>
                     </navigationItem>
                     <connections>

@@ -9,16 +9,22 @@ import UIKit
 
 class RecipDetailsViewController: UIViewController {
     
-    var recip: MyRecipes!
+    @IBOutlet var recipeCoverImageView: UIImageView!
+    @IBOutlet var recipeTitleLabel: UILabel!
+    @IBOutlet var recipeDescriptionLabel: UILabel!
+    
+    var recip: Recipe!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = recip.title
+        recipeCoverImageView.image = recip.image
+        recipeTitleLabel.text = recip.title
+        recipeDescriptionLabel.text = recip.description
         view.backgroundColor = .systemBrown
-
-        
     }
-    
+
+
+
 
 
 }

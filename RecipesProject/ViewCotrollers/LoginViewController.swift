@@ -12,7 +12,18 @@ class LoginViewController: UIViewController {
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    @IBOutlet weak var startBatton: UIButton!
+    @IBOutlet weak var forgotUserButton: UIButton!
+    @IBOutlet weak var forgotPassButton: UIButton!
+
+    
     private let user = User.getUserData()
+    override func viewDidLoad() {
+        startBatton.layer.cornerRadius = 10
+        forgotUserButton.layer.cornerRadius = 10
+        forgotPassButton.layer.cornerRadius = 10
+    }
+
     
  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

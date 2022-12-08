@@ -193,7 +193,7 @@
 			files = (
 				EDFA7D3329367445005650EC /* LaunchScreen.storyboard in Resources */,
 				EDFA7D3029367445005650EC /* Assets.xcassets in Resources */,
-				EDFA7D2E29367444005650EC /* Main1.storyboard in Resources */,
+				EDFA7D2E29367444005650EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,12 +219,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EDFA7D2C29367444005650EC /* Main1.storyboard */ = {
+		EDFA7D2C29367444005650EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EDFA7D2D29367444005650EC /* Base */,
 			);
-			name = Main1.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		EDFA7D3129367445005650EC /* LaunchScreen.storyboard */ = {
